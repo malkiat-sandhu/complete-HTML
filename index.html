@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Complete HTML</title>
+    <link rel="stylesheet" href="style.css"> <!-- linking CSS with HTML -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Heading tags 1 to 6  and They are block-level elements.-->
+    <!-- diffecrence lie in semantics, h1 tag is more important than h6.-->
+    <h1>Learning HTML, don't think about looks.</h1>
+    <h2> This is Heading 2.</h2>
+    <h3> This is Heading 3.</h3>
+    <h4> This is Heading 4.</h4> <!--An HTML element is defined by a start tag, some content, and anend tag-->
+    <h5> This is Heading 5.</h5>
+    <h6> This is Heading 6.</h6> 
+     <h6>hello there!</h6> <!--emmet shortcut h6{hello there} --> <hr>
+
+    <!-- Paragraph tag and it's a block-level element. To generate random pararaph you can use lorem and particular no. like how much words you want in the paragraph. for eg: (lorem50) -->
+   
+    <!-- The <abbr> HTML element represents an abbreviation or acronym. The optional title attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. This provides a hint to user agents on how to announce/display the content while informing all users what the abbreviation means. If present, title must contain this full description and nothing else. -->
+
+    <!-- The <b> HTML element is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use <b> for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the <strong> element. -->
+
+    <!-- The <em> HTML element marks text that has stress emphasis. The <em> element can be nested, with each level of nesting indicating a greater degree of emphasis. -->
+
+    <!-- The <i> HTML element represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among others. Historically, these have been presented using italicized type, which is the original source of the <i> naming of this element. -->
+
+    <!-- The <strong> HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type. -->
+
+    <!-- The <s> HTML element renders text with a strikethrough, or a line through it. Use the <s> element to represent things that are no longer relevant or no longer accurate. However, <s> is not appropriate when indicating document edits; for that, use the <del> and <ins> elements, as appropriate. -->
+
+    <!-- The <u> HTML element represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS. -->
+
+    <!-- The <sup> HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text. -->
+    
+    <!-- The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text. -->
+    
+    <!-- The <code> HTML element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font. -->
+   
+    <p id="first-para"><u>Lorem</u> ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Quos aliquam recusandae incidunt eveniet vel <abbr title="Hyper Text Markup Language">HTML</abbr>(Hyper Text markup Language) repellendus consequatur amet doloremque aspernatur aut? Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit</strong>. Nisi consequuntur <i>explicabo</i> voluptatibus voluptate C<sub>12</sub> H<sub>22</sub> O<sub>11</sub> sapiente esse <em>praesentium</em> excepturi quaerat at mollitia soluta aperiam vero 2<sup>2</sup>+ 4<sup>2</sup> = 20 <br> labore distinctio natus obcaecati, <s>assumenda</s> quo modi!
+    The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the
+    array.</p>
+
+    <!-- Anchor element, with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. And it's a inline elements-->
+    <!-- The <br> HTML element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. -->
+    
+    <a target="_blank" href="https://www.google.com" style="color: aliceblue;">Go to Google </a><br> <!--Target attribute in anchor element helps to open the link in new tab.-->
+    
+    <a href="mailto:sandhumalkiat52'gmail.com" style="color: aliceblue;">Malkiat's Email Id</a><br/>
+    
+    <a href="tel:+447774220419" style="color: aliceblue;">Phone no.</a><br> <hr>
+    
+    <!-- The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list.
+         -->
+  <ul>
+    <li>Rice</li>
+    <li>Milk product
+    <ul>                              
+        <li>Cheese</li>
+        <li>Butter
+            <ul>
+                <li type="square">bread with butter</li>
+                <li type="square">butter cake</li> <!-- Do not use this attribute, as it has been deprecated; use the CSS list-style-type property instead. -->
+            </ul>
+        </li>
+    </ul>
+    </li>
+    <li>House</li>
+  </ul>
+   <hr>
+  <!-- The <ol> HTML element represents an ordered list of items — typically rendered as a numbered list. -->
+
+  <ol>   <!--it should be in sequence because of semantic/ meaning  -->
+    <li>Red</li>
+    <li>Blue</li>
+    <li>Green
+     <ol type="I"><!-- use the CSS list-style-type property instead. -->
+        <li>Dark Green
+           <ol type="a"> <li>Like Tree leaves</li></ol>
+        </li>
+        <li>Light Green
+           <ol type="a"> <li>Like Parrot color</li></ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+   <hr>
+   <!-- The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs). -->
+
+    <dl>
+        <dt>Name</dt>
+        <dd>Godzilla</dd>
+        <dt>Born</dt>
+        <dd>1952</dd>
+        <dt>Birthplace</dt>
+        <dd>Japan</dd>
+        <dt>Color</dt>
+        <dd>Green</dd>
+      </dl>
+      <hr>
+  <!-- The <table> HTML element represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. -->
+  
+     <table>  <!-- 1st example -->
+        <tr>
+            <td>A</td>    <!-- this is the shortcut -> table>(tr>td*3)*3 -->
+            <td>B</td>    
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </table>
+
+    <table>   <!-- 2nd example -->
+        <tr>
+            <th>Name</th>
+            <th>Specialist</th>
+            <th>ID</th>    <!-- this is the shortcut -> table>(tr>th*3)>(tr>td*3)*2-->
+        </tr>
+        <tr>
+            <td>Mya Hopkins</td>
+            <td>Forrnsic</td>
+            <td>194326</td>
+        </tr>
+        <tr>
+            <td>Malkiat Singh</td>
+            <td>Programmer</td>
+            <td>193885</td>
+        </tr>
+    </table>
+
+    <table border="1">  <!-- 3rd example -->
+        <thead>
+            <tr>
+                <th>Student Id</th>
+                <th>Student Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12</td>
+                <td>Mya</td>
+                <td>Female</td>
+                <td>Forensic</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Malkiat</td>
+                <td rowspan="3">Male</td>
+                <td rowspan="3">CS</td>
+                <td>50</td>
+            </tr>
+           
+            <tr>
+                <td>34</td>
+                <td>Raja</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>Rahul</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>Rani</td>
+                <td>Female</td>
+                <td>Forensic</td>
+                <td>92</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total marks from both classes</td>
+                <td>401 Marks</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table border="1">   <!-- 4th example -->
+        <caption>Learning using colspan and rowspan</caption>
+        <tr>
+            <td>col1</td>
+            <td>col2</td>
+            <td>col3</td>
+            <td>col4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">row1cell1</td>
+            <td>row1cell2</td>
+            <td>row1cell3</td>
+            <td rowspan="3">row1cell4</td>
+        </tr>
+        <tr>
+            <td>row2cell2</td>
+            <td>row2cell3</td>
+        </tr>
+        <tr>
+            <td colspan="3">row3cell1</td>
+        </tr>
+    </table>
+     <hr>
+
+    <!-- The <img> HTML element embeds an image into the document. -->
+    <img src="https://pbs.twimg.com/profile_images/1007708825892376576/edVjM5i8_400x400.jpg" alt="Mya Hopkins Image " loading="lazy"><br>
+
+    <!-- The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written. By default, <pre> is a block-level element, i.e. its default display value is block.-->
+
+    <pre>
+    Hi, I am Mya. 
+    Hope, Everything is going well at your end.
+    </pre>
+     <hr>
+    <img width="410" src="images/butterfly.jpg" alt="Butterfly Image">
+     <hr>
+    <!-- The <div> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS. -->
+        <div class="shadowbox">
+            <p>Here's a very interesting note displayed in a lovely shadowed box.</p>
+          </div>
+          <hr>
+    <!-- The <span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <span> is very much like a <div> element, but <div> is a block-level element whereas a <span> is an inline-level element. -->
+        <span>Everytthing is great.</span><br>
+
+    <!-- creatinng a bookmark in html by using anchor tag -->
+          <a href="#first-para"  style="color: burlywood;">Go to the first paragraph in this Page.</a>
+          <hr>
+    
+    <!-- Emmet abbr  -->
+    <!-- block element can behave inline and vice-versa by dispay (display: inline)them differently in css. -->
+   <article>This is my first article.</article> <!--emmet ahortcut article{this is my first article}--> <hr>
+   <section class="color"></section>
+   <aside id="id"></aside> <!--emmet ahortcut section.color+aside#id--> 
+   
+   <!-- example -->
+   <section>
+    <h2>Frequently Asked Question</h2>
+    <details>
+        <summary>What is your name?</summary>
+       <p>My name is Malkiat Singh.</p> 
+    </details>
+    <details>
+        <summary>Why are you learning HTML?</summary>
+      <p>Because I want to become Web developer.</p>  
+    </details>
+   </section>
+      <hr>
+   <!-- The <form> HTML element represents a document section containing interactive controls for submitting information. -->
+
+    <form action=""> <!--1st example -->
+   <label for="email">Enter your Email id</label>
+   <input type="email" id="email" placeholder="Enter Email">
+   <br>
+    <br> <!--dont use br tag for next line continuosly -->
+   <div><label for="password">Enter your Password</label>
+   <input type="password" id="password">
+   </div>
+
+   <input type="submit" value="Submit"> or <button>click</button>
+   <input type="reset" value="Reset">
+   </form>
+
+   <form action="">
+    <div>
+    <label for="pickDate">Choose Date</label>
+    <input type="date" id="pickDate">
+    </div>
+    <div>
+    <label for="selector1">Choose your Course</label>
+    <select name="course" id="selector1">
+    <option value="computer science">Computer Science</option>
+    <option value="forensic">Forensic</option>
+    <option value="business">Business</option>
+    <option value="hospitality mgmt">Hospitality Management</option>
+    </select>
+    </div>  
+    <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="Enter your text"></textarea>
+   </form>
+
+   <fieldset>
+    <legend>HTML Form Dummy</legend>
+    <div>
+        <label for="pickDate">Choose Date</label>
+        <input type="date" id="pickDate">
+    </div>
+        <div>
+            <p>You can also use the min and max attributes to add restrictions to dates:</p>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+        </div>
+          
+        
+        <div>
+        <label for="selector1">Choose your Course</label>
+        <select name="course" id="selector1">
+        <option value="computer science">Computer Science</option>
+        <option value="forensic">Forensic</option>
+        <option value="business">Business</option>
+        <option value="hospitality mgmt">Hospitality Management</option>
+        </select>
+        </div>  
+        <div>
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars" multiple>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        </div>
+        <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="Enter your text"></textarea>
+   </fieldset>
+        
+    <!-- Input Type Text
+    <input type="text"> defines a single-line text input field: -->
+   <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+   </form>
+<hr>
+   <!--Input Type Radio
+   <input type="radio"> defines a radio button. -->
+
+   <p>Choose your favorite Web language:</p>
+
+   <form>
+     <input type="radio" id="html" name="fav_language" value="HTML">
+     <label for="html">HTML</label><br>
+     <input type="radio" id="css" name="fav_language" value="CSS">
+     <label for="css">CSS</label><br>
+     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+     <label for="javascript">JavaScript</label>
+   </form>
+<hr>
+   <!--Input Type Checkbox
+    <input type="checkbox"> defines a checkbox. Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+
+   <form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+   </form>
+  <hr>
+   <!-- Input Type Color -->
+   <h2>Show a Color Picker</h2>
+
+   <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p><br>
+   <form action="">
+     <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    <br>
+    <input type="submit" value="Submit">
+   </form>
+   <hr>
+  <!-- Input Type File
+  The <input type="file"> defines a file-select field and a "Browse" button for file uploads. -->
+  <form>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+  </form>
+   <hr>
+  <form>
+    <input type="image" src="images/scenery.jpg" alt="Submit" width="248">
+   
+  
+    <label for="phone">
+        Enter your phone number:<br />
+        <small>Format: 123-456-7890</small>
+      </label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+    </form><hr>
+
+    <!-- The HTML <video> element is used to show a video on a web page. -->
+     <video width="320" height="240" controls> <!--(muted,poster="thumbnail photo like instagram reels",loop, autoplay)-->
+        <source src="videos/mov_b.mp4" type="video/mp4">
+      </video><hr>
+
+       <!-- <audio>: The Embed Audio element
+       The <audio> HTML element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <source> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream. -->
+        <div>
+      <audio src="audio/happy-holiday-120132.mp3" controls></audio>
+       </div><hr>
+     <!--(muted,poster="thumbnail photo like instagram reels",loop, autoplay preload
+        This enumerated attribute is intended to provide a hint to the browser about what the author thinks will lead to the best user experience. It may have one of the following values:
+        
+        none: Indicates that the audio should not be preloaded.
+        metadata: Indicates that only audio metadata (e.g. length) is fetched.
+        auto: Indicates that the whole audio file can be downloaded, even if the user is not expected to use it.
+        empty string: A synonym of the auto value.
+        The default value is different for each browser. The spec advises it to be set to metadata.
+        
+        Note:
+        
+        The autoplay attribute has precedence over preload. If autoplay is specified, the browser would obviously need to start downloading the audio for playback.
+        The browser is not forced by the specification to follow the value of this attribute; it is a mere hint.)-->
+
+        <!--<iframe>: The Inline Frame element
+             The <iframe> HTML element represents a nested browsing context, embedding another HTML page into the current one. -->
+       <div>
+        <iframe src="https://www.codewithharry.com/notes/" title="cwh notes"width="355" height="450"></iframe>
+       </div>
+       <hr>
+      <hr>
+       <div><iframe width="560" height="315" src="https://www.youtube.com/embed/fb4rgYbi84c?si=b70WtopRsZfYqq-H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <!-- Here are the block-level elements in HTML:
+
+        <address><article><aside><blockquote><canvas><dd>
+        <div><dl><dt><fieldset><figcaption><figure>
+        <footer><form><h1>-<h6><header><hr><li><main><nav>
+        <noscript><ol><p><pre><section><table><tfoot><ul><video> -->
+
+    <!--  Here are the inline elements in HTML:
+
+        <a><abbr><acronym><b><bdo><big><br><button><cite><code>
+        <dfn><em><i><img><input><kbd><label><map><object>
+        <output><q><samp><script><select><small><span><strong>
+        <sub><sup><textarea><time><tt><var>     -->
+
+   <h3>HTML Entities</h3> 
+    <p></p>  &lt;P&gt;&lt;/P&gt;
+    <hr>
+    &copy;
+    <hr>
+    &amp;
+    <hr>
+    test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test <!--(for spacing) --> <hr>
+    &reg;<hr>
+    &pound;
+    &euro;<hr>
+    &quot;
+    &apos;
+</body>
+</html>
